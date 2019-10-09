@@ -42,12 +42,12 @@ struct tcphdr {
     uint64_t	th_ack;			/* acknowledgement number */
 #if BYTE_ORDER == LITTLE_ENDIAN
     uint8_t    	th_x2:4,		/* (unused) */
-    th_off:4;		/* data offset */
-#endif
+    th_off:4;                   	/* data offset */
+#endif 
 #if BYTE_ORDER == BIG_ENDIAN
     uint8_t	th_off:4,		/* data offset */
     th_x2:4;		/* (unused) */
-    
+};  
     struct ethhdr * eth
     struct iphdr * ip
     sturct tcphdr * tcp
